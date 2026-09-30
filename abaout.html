@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My webSite(Abaout)</title>
+    <style>
+        table,
+        th,
+        td{
+            border: 1px solid black;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,6 +28,72 @@
     </header>
     <main>
         <p>This is simple paragraph.</p>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+        <label for="emails">Email:</label>
+        <input type="email" name="emails" id="emails">
+        <label for="pass">Password:</label>
+        <input type="password" name="pass" id="pass">
+        <label for="num">Number:</label>
+        <input type="number" name="num" id="num">
+        <br>
+        <hr>
+        <label for="gender">Select:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <input type="checkbox" name="check" id="check">
+        <label For="check">Check</label>
+        <br>
+        <optgroup label="Fruits">
+            <option value="banana">Banana</option>
+            <option value="apple">Apple</option>
+            <option value="orange">Orange</option>
+        </optgroup>
+
+        <input type="radio" id="opc1" id="opc1">
+        <label for="opc1">Option 1</label>
+        <input type="radio" id="opc2" id="opc2">
+        <label for="opc2">Option 2</label>
+        <br>
+
+        <textarea id="message" name="message" rows="10" cols="50"></textarea>
+        <br>
+
+        <label for="num">Number:</label>
+        <input type="=number" id="num" name="num" min="1" max="10">
+        <br>
+        <label for="dat">Date:</label>
+        <input type="date" id="dat" name="dat">
+        <br>
+        <input type="file" id="fil" name="fil">
+        <input type="range" id="ran" name="ran">
+        <input type="color" id="col" name="col">
+        <br>
+        <input type="tel" id="cel" name="cel ">
+        <input type="time" id="tim" name="tim">
+        <input type="search" id="sc" name="sc">
+
+        <br>
+        <hr>
+        <table>
+            <thead>
+                <tr>
+                    <th>Header 1</th>
+                    <th>Header 2</th>
+                    <th>Header 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Data 1</td>
+                    <td>Data 2</td>
+                    <td>Data 3</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
     <footer>
         <p>&copy; Misael Cruz</p>
