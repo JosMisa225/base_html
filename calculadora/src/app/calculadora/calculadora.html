@@ -1,1 +1,24 @@
-<p>calculadora works!</p>
+<div class="calculator-card">
+  <h2>Calculadora</h2>
+
+  <div class="input-group">
+    <div class="field">
+      <label for="a">Número A</label>
+      <input id="a" type="number" [(ngModel)]="a" name="a" placeholder="0">
+    </div>
+
+    <span class="operator">+</span>
+
+    <div class="field">
+      <label for="b">Número B</label>
+      <input id="b" type="number" [(ngModel)]="b" name="b" placeholder="0">
+    </div>
+  </div>
+
+  <button class="btn-sumar" (click)="sumar()">Calcular Suma</button>
+
+  <div class="result-box">
+    <span>Resultado</span>
+    <strong>{{ resultado() }}</strong>
+  </div>
+</div>
