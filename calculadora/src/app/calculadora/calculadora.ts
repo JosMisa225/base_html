@@ -8,11 +8,11 @@ import { FormsModule } from '@angular/forms'; // <-- 1. Importar esto
   styleUrl: './calculadora.css'
 })
 export class Calculadora {
-  a = 0;
-  b = 0;
+  readonly a = signal(0);
+  readonly b = signal(0);
   readonly resultado = signal(0);
 
-  sumar() {
-    this.resultado.set(Number(this.a) + Number(this.b));
+  sumar(): void {
+    this.resultado.set(Number(this.a()) + Number(this.b()));
   }
 }
